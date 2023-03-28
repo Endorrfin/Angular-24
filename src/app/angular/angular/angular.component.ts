@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-angular',
+  selector: 'kvn-angular',
   templateUrl: './angular.component.html',
   styleUrls: ['./angular.component.scss']
 })
