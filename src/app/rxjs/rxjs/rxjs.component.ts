@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-rxjs',
+  selector: 'kvn-rxjs',
   templateUrl: './rxjs.component.html',
   styleUrls: ['./rxjs.component.scss']
 })

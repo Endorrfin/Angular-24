@@ -5,6 +5,7 @@ import { BodyComponent } from './body/body.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SublevelMenuComponent } from './sublevel-menu.component';
 
 
 
@@ -13,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidenavComponent,
     BodyComponent,
     DashboardComponent,
+    SublevelMenuComponent,
   ],
   exports: [
     SidenavComponent,

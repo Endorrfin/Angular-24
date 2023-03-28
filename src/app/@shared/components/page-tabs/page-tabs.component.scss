@@ -1,0 +1,21 @@
+ul {
+  @apply flex flex-row;
+  margin: 15px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+
+  li {
+    //background-color: cyan;
+    list-style-type: none;
+    //text-decoration: none;
+    @apply p-7;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .active {
+    @apply font-bold;
+    border-bottom: 1px solid rgb(60, 59, 59);
+  }
+}
