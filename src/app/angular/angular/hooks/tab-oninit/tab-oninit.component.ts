@@ -1,4 +1,5 @@
-import {  Component,
+import {
+  Component,
   OnChanges,
   OnInit,
   DoCheck,
@@ -6,7 +7,7 @@ import {  Component,
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked,
-  OnDestroy
+  OnDestroy, SimpleChange
 } from '@angular/core';
 
 @Component({
@@ -15,30 +16,57 @@ import {  Component,
   styleUrls: ['./tab-oninit.component.scss'],
   standalone: true,
 })
-export class TabOninitComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-  constructor() {}
+export class TabOninitComponent implements
+  // OnChanges,
+  OnInit,
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked,
+  OnDestroy {
 
-  ngOnChanges() {}
+  constructor() {
+    console.log('-- 1.0 -- Parent.constructor');
+  }
 
-
-  ngOnInit() {}
-
-
-  ngDoCheck() {}
-
-
-  ngAfterContentInit() {}
-
-
-  ngAfterContentChecked() {}
-
-
-  ngAfterViewInit() {}
+  // ngOnChanges(changes: SimpleChange): void {
+  //   console.log('-- 1.1 -- Parent.ngOnChanges', changes);
+  // }
 
 
-  ngAfterViewChecked() {}
+  ngOnInit(): void {
+    console.log('-- 1.2 -- Parent.ngOnInit');
+  }
 
 
-  ngOnDestroy() {}
+  ngDoCheck(): void {
+    console.log('-- 1.3 -- Parent.ngDoCheck');
+  }
+
+
+  ngAfterContentInit(): void {
+    console.log('-- 1.4 -- Parent.ngAfterContentInit');
+  }
+
+
+  ngAfterContentChecked(): void {
+    console.log('-- 1.5 -- Parent.ngAfterContentChecked');
+  }
+
+
+  ngAfterViewInit(): void {
+    console.log('-- 1.6 -- Parent.ngAfterViewInit');
+  }
+
+
+  ngAfterViewChecked(): void {
+    console.log('-- 1.7 -- Parent.ngAfterViewChecked');
+  }
+
+
+  ngOnDestroy(): void {
+    console.log('-- 1.8 -- Parent.ngOnDestroy');
+  }
 
 }

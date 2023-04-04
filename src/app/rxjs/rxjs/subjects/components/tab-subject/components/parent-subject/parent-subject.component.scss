@@ -1,0 +1,16 @@
+.parent-container {
+  border: 5px solid darkred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: cyan;
+  padding: 10px 20px;
+  h2 {
+    color: #4f0000;
+    font-size: 22px;
+
+  }
+}

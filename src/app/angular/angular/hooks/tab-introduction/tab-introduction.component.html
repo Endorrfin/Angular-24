@@ -1,0 +1,9 @@
+
+<kvn-row-template>
+  <kvn-button [label]="'Toggle'" [color]="'blue'" (click)="show = !show"></kvn-button>
+<!--  <kvn-button [label]="'Modify input'" [color]="'gray'" (click)="title = title + '1'"></kvn-button>-->
+<!--  <kvn-button [label]="'Modify input'" [color]="'red'" (click)="title = title + '1'"></kvn-button>-->
+  <kvn-button [label]="'Modify input'" [color]="'green'" (click)="title = title + '1'"></kvn-button>
+</kvn-row-template>
+
+<kvn-parent *ngIf="show" [title]="title"></kvn-parent>

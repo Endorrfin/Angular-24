@@ -1,0 +1,42 @@
+<!--<button #button type="button" [class]="'appBtn ' + currentColor" [ngClass]="{-->
+<!--'__disabled': isDisable,-->
+<!--'__rounded': rounded,-->
+<!--'__height': bigHeight,-->
+<!--'__hover': isHover-->
+<!--}">-->
+<!--  <ng-content></ng-content>-->
+<!--&lt;!&ndash;  <span>{{label | translate}}</span>&ndash;&gt;-->
+<!--  <span>{{ label }}</span>-->
+<!--  <div class="info-icon info-icon_btn"-->
+<!--       *ngIf="tooltipText"-->
+<!--       [tooltip]="tooltipText | translate | htmlTooltop"-->
+<!--       [tooltip]="tooltipText | translate | htmlTooltop"-->
+<!--       placement="top"-->
+<!--       tooltip-class="tooltip-shedule">-->
+<!--    <svg class="svg-info-icon">-->
+<!--      <use xlink:href="/assets/images/sprite.svg#question" xmlns:xlink="http://www.w3.org/1999/xlink"></use>-->
+<!--    </svg>-->
+<!--  </div>-->
+<!--  <h24-spinner *ngIf="spinner"></h24-spinner>-->
+<!--</button>-->
+
+
+<button #button type="button" [class]="'appBtn ' + currentColor" [ngClass]="{
+'__disabled': isDisable,
+'__rounded': rounded,
+'__height': bigHeight,
+'__hover': isHover
+}">
+  <ng-content></ng-content>
+  <span>{{ label }}</span>
+  <div class="info-icon info-icon__btn"
+       *ngIf="tooltipText"
+       data-tooltip="tooltipText | htmlTooltip"
+       placement="top"
+       tooltip-class="tooltip-schedule">
+    <svg class="svg-info-icon">
+      <use xlink:href="/assets/images/sprite.svg#question" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+    </svg>
+  </div>
+<!--  <h24-spinner *ngIf="spinner"></h24-spinner>-->
+</button>

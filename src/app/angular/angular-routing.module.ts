@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngularComponent } from './angular/angular.component';
 import { HooksComponent } from './angular/hooks/hooks.component';
 import { FormComponent } from './angular/form/form.component';
+import { DecoratorsComponent } from './angular/decorators/decorators.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./angular/hooks/hooks.route').then((m) => m.HooksRoutes)
+      },
+    ],
+  },
+  {
+    path: 'decorators',
+    component: DecoratorsComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./angular/decorators/decorators.route').then((m) => m.DecoratorsRoutes)
       },
     ],
   },

@@ -1,0 +1,56 @@
+<div class="wrap" [class.__autoWidth]="autoWith" [class.__autoLabelWidth]="autoLabelWidth">
+  <div class="label" [ngStyle]="{ minWidth: customLabelWidth, maxWidth: customLabelWidth }">
+    <div [ngClass]="{'label_flex': inEduOldStyle}">
+      <span [class.mod-required]="labelRequired" [class.__bold]="labelBold">{{label}}</span>
+      <div class="icons" *ngIf="inEduOldStyle">
+
+<!--        [tooltip]="'Diagnosis | Обязательно для подписания записи и передачи данных в систему eZdorovya'"-->
+        <div
+          class="info-icon icon-nszu"
+          theme="dark"
+          placement="top"
+          tooltip-class="tooltip-custom">
+          <img src="../../../../../assets/images/icons/nszu.png" alt="">
+        </div>
+      </div>
+
+      <span *ngIf="subLabel" class="text-style"><br>{{subLabel}</span>
+    </div>
+  </div>
+  <div [ngClass]="customControlClass" class="control" [class.__align]="align" [ngStyle]="{ minWidth: customControlWidth, maxWidth: customControlWidth }">
+    <ng-content></ng-content>
+  </div>
+  <div class="icons" [ngClass]="{'min-width-60': defaultRequiredErrorMsg}">
+<!--    <div class="info-icon icon-nszu"-->
+<!--         theme="light"-->
+<!--         [tooltip-class]="tooltipClass"-->
+<!--         [matTooltip]="isMatTooltip ? ('Directions page | Create page | control eHealth icon tooltip') : null"-->
+<!--         [tooltip]="isMatTooltip ? null : ('Directions page | Create page | control eHealth icon tooltip')"-->
+<!--         *ngIf="inEdu">-->
+<!--      <img src="../../../../../assets/images/icons/nszu.png" alt="">-->
+<!--    </div>-->
+<!--    <div class="info-icon icon-info" *ngIf="tooltiptext"-->
+<!--         [class.__tooltipInEhealth]="tooltipInEdu"-->
+<!--         [ngClass]="customInfoIconClass"-->
+<!--         theme="light"-->
+<!--         [tooltip-class]="tooltipClass"-->
+<!--         placement="top"-->
+<!--         [matTooltip]="isMatTooltip ? (tooltiptext) : null"-->
+<!--         [tooltip]="isMatTooltip ? null : tooltiptext">-->
+<!--      <img src="../../../../../assets/images/info.svg" alt="">-->
+<!--    </div>-->
+    <div class="info-icon icon-checkMark" *ngIf="checkMark">
+      <svg class="svg-icon svg-check-mark">
+        <use xlink:href="/assets/images/sprite.svg#check-mark" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="custom-action" *ngIf="customActionText">
+    <a (click)="customActionClicked.emit()">{{ customActionText }}</a>
+  </div>
+  <div class="error" *ngIf="error || errorRequired">
+    <span *ngIf="errorRequired && error">{{error}}</span>
+    <span
+      *ngIf="errorRequired && !error">{{( defaultRequiredErrorMsg ? 'Field is required' : 'Directions page | Field is required') }}</span>
+  </div>
+</div>
