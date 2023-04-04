@@ -1,0 +1,146 @@
+<div class="form-container__child">
+
+  <form [formGroup]="form" autocomplete="off" class="form">
+    <div class="form-container__child">
+      <div class="row">
+        <mat-card-title>Performance run</mat-card-title>
+      </div>
+      <div class="row">
+        <mat-panel-description>
+          Performance Run is enabled on your treadmill.
+          You can customize you Performance Run layout and the numbers you want displayed on the resistance and speed keys.
+          Choose from 6-10 keys to be displayed for your members.
+        </mat-panel-description>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <section class="btn-toggle-appearance">
+            <div class="btn-toggle-appearance__wrapper">
+              <mat-button-toggle-group class="group" formControlName="switcher" aria-label="Switcher">
+                <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="ON">ON</mat-button-toggle>
+                <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="OFF">OFF</mat-button-toggle>
+              </mat-button-toggle-group>
+            </div>
+
+          </section>
+
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill" fillColor="accent">
+            <mat-label>Layout</mat-label>
+            <mat-select formControlName="layout">
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let option of layoutOptions" [value]="option">{{option.value}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          Incline Keys (0-15%)
+        </div>
+        <div class="column">
+          Speed Keys (1-14 MPH)
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill" fillColor="accent">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysOne" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysOne" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysTwo" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysTwo" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysThree" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysThree" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysFour" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysFour" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysFive" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysFive" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="inclineKeysSix" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label></mat-label>
+            <input matInput formControlName="speedKeysSix" type="number" class="form-control" placeholder="">
+          </mat-form-field>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+
+
+

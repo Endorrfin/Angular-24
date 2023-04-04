@@ -23,6 +23,11 @@ import { TabInputComponent } from './angular/decorators/tab-input/tab-input.comp
 import { ChildInputDecoratorComponent } from './angular/decorators/tab-input/components/child-decorator/child-input-decorator.component';
 import { ParentInputDecoratorComponent } from './angular/decorators/tab-input/components/parent-decorator/parent-input-decorator.component';
 import { SharedModule } from '../@shared/shared.module';
+import { BaseFormComponent } from './angular/form/tab-reactive-forms/base-form/base-form.component';
+import { GeneralComponent } from './angular/form/tab-reactive-forms/base-form/components/general/general.component';
+import { PerformanceComponent } from './angular/form/tab-reactive-forms/base-form/components/performance/performance.component';
+import { CustomizationComponent } from './angular/form/tab-reactive-forms/base-form/components/customipztion/customization.component';
+import { EnergySavingComponent } from './angular/form/tab-reactive-forms/base-form/components/energy-saving/energy-saving.component';
 
 
 @NgModule({
@@ -42,6 +47,11 @@ import { SharedModule } from '../@shared/shared.module';
     ChildComponent,
     ChildInputDecoratorComponent,
     ParentInputDecoratorComponent,
+    BaseFormComponent,
+    GeneralComponent,
+    PerformanceComponent,
+    CustomizationComponent,
+    EnergySavingComponent,
     // DecoratorsComponent,
     // TabIntroDecoratorsComponent,
     // InputComponent,
@@ -52,7 +62,8 @@ import { SharedModule } from '../@shared/shared.module';
   ],
   exports: [
     ParentComponent,
-    ParentInputDecoratorComponent
+    ParentInputDecoratorComponent,
+    BaseFormComponent
   ],
   imports: [
     CommonModule,

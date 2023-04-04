@@ -1,0 +1,162 @@
+
+<div class="form-container__child">
+  <form [formGroup]="form" autocomplete="off" class="form">
+    <!--  <form [formGroup]="generalFormGroup" autocomplete="off" class="form">-->
+    <div class="form-container__child">
+      <div class="row">
+        <mat-card-title>General</mat-card-title>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Default Language</mat-label>
+            <mat-select formControlName="defaultLanguage" [(value)]="selectedLanguage">
+              <mat-option>None</mat-option>
+              <mat-option [value]="option.language" *ngFor="let option of countries">{{option.language}}</mat-option>
+            </mat-select>
+            <!-- <div class="error-text" *ngIf="form.controls.defaultLanguage.errors?.['required']">This field is required.</div>-->
+          </mat-form-field>
+          <div>You selected: {{selectedLanguage}}</div>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Available Languages</mat-label>
+            <mat-select formControlName="availableLanguages">
+              <mat-option *ngFor="let language of countries" [value]="language.language">{{countries.length}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Units:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="units" aria-label="Units">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Imperial">Imperial</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Metric">Metric</mat-button-toggle>
+            </mat-button-toggle-group>
+            <!-- <p>Chosen value is {{formControlName.value}}</p>-->
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Sounds:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="sounds" aria-label="Sounds">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="On">On</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Volume:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="volume" aria-label="Volume">
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value" value="1">1</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="2">2</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="3">3</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="4">4</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="5">5</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="6">6</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="7">7</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="8">8</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value invisible" value="9">9</mat-button-toggle>
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value" value="10">10</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Volume:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <!--            <mat-button-toggle-group class="group" formControlName="volume" [ngValue]="option" aria-label="Volume" *ngFor="let option of volume">-->
+            <mat-button-toggle-group class="group" formControlName="volume" aria-label="Volume" *ngFor="let option of volume">
+              <mat-button-toggle class=" btn-toggle-appearance__wrapper-value" id="{{option.id}}" value="{{option.id}}">{{option.value}}</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Auto Updates:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="autoUpdates" aria-label="Auto Updates">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Yes">Yes</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="No">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">QR Login:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="qrLogin" aria-label="QR Login">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Yes">Yes</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="No">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="info">
+          <div class="info__title">
+            <small>Identification System</small>
+          </div>
+          <mat-label class="title info__description">Hallo Fitness Cloud</mat-label>
+        </section>
+      </div>
+
+      <mat-divider class="split"></mat-divider>
+
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Default Language</mat-label>
+            <mat-select formControlName="defaultLanguage" matNativeControl (change)="selectedLanguageByDefault">
+              <mat-option></mat-option>
+              <mat-option [value]="option.language" *ngFor="let option of countries">{{option.language}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div>You selected: {{selectedLanguageByDefault}}</div>
+        </div>
+        <div class="column">
+          <mat-label class="title">Volume:</mat-label>
+          <ng-container class="form-element">
+            <mat-slider min="0" max="10" step="1" showTickMarks discrete [displayWith]="formatLabel">
+              <input formControlName="volume" matSliderThumb>
+            </mat-slider>
+          </ng-container>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+

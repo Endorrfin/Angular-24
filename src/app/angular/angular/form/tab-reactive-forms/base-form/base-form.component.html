@@ -1,0 +1,38 @@
+
+<div class="form-container">
+
+  <ng-container
+    [formGroup]="baseForm"
+    novalidate autocomplete="off"
+    (ngSubmit)="onSubmit()"
+    class="base-form">
+    <div class="from-container__section">
+      <kvn-general formGroupName="generalSection"></kvn-general>
+
+      <kvn-customization formGroupName="customizationSection"></kvn-customization>
+    </div>
+
+    <div class="from-container__section">
+      <kvn-performance formGroupName="performanceSection"></kvn-performance>
+
+      <kvn-energy-saving formGroupName="energySavingSection"></kvn-energy-saving>
+    </div>
+
+    <div class="btn btn-container">
+      <button
+        mat-raised-button
+        class="btn-publish"
+        color="warn"
+        (click)="onSubmit()"
+        [disabled]="!baseForm.valid">
+        Publish
+      </button>
+    </div>
+
+  </ng-container>
+
+</div>
+
+<mat-divider></mat-divider>
+<pre style="margin: 20px 0; padding: 15px; border: 2px dashed blue; width: fit-content">{{ baseForm.value | json }}</pre>
+<mat-divider></mat-divider>

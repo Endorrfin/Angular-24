@@ -1,0 +1,25 @@
+.form-container__child {
+  width: 480px;
+  margin-bottom: 16px;
+}
+
+.form-container__child .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.mat-form-field {
+  max-width: 60px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
