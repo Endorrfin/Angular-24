@@ -9,13 +9,18 @@ import { TabAftercontentcheckedComponent } from './tab-aftercontentchecked/tab-a
 import { TabAfterviewinitComponent } from './tab-afterviewinit/tab-afterviewinit.component';
 import { TabAfterviewcheckedComponent } from './tab-afterviewchecked/tab-afterviewchecked.component';
 import { TabOndestroyComponent } from './tab-ondestroy/tab-ondestroy.component';
+import { TabIntroductionComponent } from './tab-introduction/tab-introduction.component';
 
 export const HooksRoutes: Routes = [
-  { path: '', redirectTo: PATHS.onchanges, pathMatch: 'full' },
+  { path: '', redirectTo: PATHS.introduction, pathMatch: 'full' },
   {
     path: '',
     component: HooksComponent,
     children: [
+      {
+        path: PATHS.introduction,
+        component: TabIntroductionComponent,
+      },
       {
         path: PATHS.onchanges,
         component: TabOnchangesComponent,

@@ -21,6 +21,10 @@ export const navbarData: INavbarData[] = [
         label: 'Hooks'
       },
       {
+        routeLink: 'angular/decorators',
+        label: 'Decorators'
+      },
+      {
         routeLink: 'angular/forms',
         label: 'Forms'
       },
@@ -35,6 +39,10 @@ export const navbarData: INavbarData[] = [
       {
         routeLink: 'rxjs/rxjs',
         label: 'rxjs'
+      },
+      {
+        routeLink: 'rxjs/subjects',
+        label: 'Subjects'
       },
       {
         routeLink: 'rxjs/subject',

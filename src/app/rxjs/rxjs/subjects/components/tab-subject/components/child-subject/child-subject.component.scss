@@ -1,0 +1,22 @@
+.child-subject-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  min-height: 120px;
+  background-color: #031769;
+  padding: 10px 20px;
+  margin: 20px;
+
+  h2 {
+    color: #fff;
+    font-size: 22px;
+
+  }
+
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+}

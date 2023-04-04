@@ -1,0 +1,175 @@
+\:host {
+  display: block;
+  &.__width {
+    .control {
+      max-width: none;
+    }
+  }
+}
+
+
+::ng-deep {
+  tooltip.tooltip-custom {
+    position: fixed;
+  }
+
+  tooltip.tooltip-custom-z-index {
+    z-index: 2001;
+  }
+}
+
+.wrap {
+  display: flex;
+
+  &.__autoWidth {
+    .control {
+      min-width: auto;
+      max-width: none;
+    }
+  }
+
+  &.__autoLabelWidth {
+    .label {
+      min-width: auto;
+      max-width: none;
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.__bold {
+  font-weight: 500;
+}
+
+.label {
+  font-size: 14px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 350px;
+  max-width: 350px;
+  padding-right: 40px;
+  height: 36px;
+
+  &_flex {
+    display: flex;
+    span {
+      display: flex !important;
+    }
+  }
+
+  span {
+    min-height: 36px;
+    display: inline;
+    align-items: center;
+    line-height: normal;
+
+    &.mod-required {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: inline-block;
+        vertical-align: super;
+        content: '*';
+        color: #EE6055;
+        margin-left: 3px;
+        transform: translateY(4px);
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  height: 36px;
+
+  .info-icon {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    line-height: 0;
+    width: 12px;
+    box-sizing: content-box;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.svg-check-mark {
+  fill: #4FBE55;
+}
+
+.control {
+  min-width: 380px;
+  max-width: 380px;
+  position: relative;
+
+  &.__align {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.error {
+  margin-left: 12px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #f44336;
+  font-size: 14px;
+}
+
+.text-style {
+  line-height: 14px;
+  font-size: 12px;
+}
+
+.min-width-60 {
+  min-width: 60px
+}
+
+.custom-action {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+
+  a {
+    font-size: 14px;
+    color: #0a8cf9;
+    text-decoration: underline;
+    user-select: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
