@@ -1,0 +1,41 @@
+<!--<p style="color: red">energy-saving works!</p>-->
+
+<div class="form-container__child">
+  <form [formGroup]="form" autocomplete="off" class="form">
+    <div class="form-container__child">
+      <div class="row">
+        <mat-card-title>Energy Saving</mat-card-title>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Auto Shutoff:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="autoShutoff" aria-label="Auto Shutoff">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="On">On</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="btn-toggle-appearance">
+          <div class="btn-toggle-appearance__title">
+            <mat-label class="title">Inactivity Timer:</mat-label>
+          </div>
+          <div class="btn-toggle-appearance__wrapper">
+            <mat-button-toggle-group class="group" formControlName="inactivityTimer" aria-label="Inactivity Timer">
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="On">On</mat-button-toggle>
+              <mat-button-toggle class="btn-toggle-appearance__wrapper-value" value="Off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,24 @@
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.from-container__section, .btn-container {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-right: 40px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+
+  .btn-publish {
+    background-color: red;
+    color: #f6f6f6;
+    cursor: pointer;
+  }
+}
+
