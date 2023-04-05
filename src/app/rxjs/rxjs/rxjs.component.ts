@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../../@shared/services/data.service';
 
 @Component({
   selector: 'kvn-rxjs',
@@ -8,6 +10,10 @@ import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 })
 export class RxjsComponent implements OnInit {
 
+  userRole = 'user';
+  // userRole = 'admin';
+  private channelName: string;
+
   subject = new Subject();
   asyncSubject = new AsyncSubject();
   behaviorSubject = new BehaviorSubject('a');
@@ -15,8 +21,22 @@ export class RxjsComponent implements OnInit {
 
   subjects = [this.subject, this.asyncSubject, this.behaviorSubject, this.replaySubject];
 
+  constructor(
+    private dataService: DataService,
+    private route: ActivatedRoute
+  ) {
+  }
+
   ngOnInit() {
     // this.log();
+
+    this.dataService.getData().subscribe((res) => {
+      this.channelName = res;
+    });
+
+    this.route.data.subscribe(res => {
+      this.channelName = res['data'];
+    })
   }
 
   // log = (subjectType: any) => (e: any) => console.log(`${subjectType}: ${e}`);

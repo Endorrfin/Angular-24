@@ -7,6 +7,11 @@ import { BehaviorSubjectComponent } from './components/behavior-subject/behavior
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
 import { SubjectsComponent } from './rxjs/subjects/subjects.component';
+import { AuthGuard } from '../@shared/guards/auth.guard';
+import { RoleGuard } from '../@shared/guards/role.guard';
+import { NotCompleteGuard } from '../@shared/guards/not-complete.guard';
+import { AbilityGuard } from '../@shared/guards/ability.guard';
+import { ResolveGuard } from '../@shared/guards/resolve.guard';
 
 const routes: Routes = [
   {
@@ -29,15 +34,20 @@ const routes: Routes = [
   },
   {
     path: 'behavior-subject',
-    component: BehaviorSubjectComponent
+    component: BehaviorSubjectComponent,
+    // canActivate: [AuthGuard],
   },
   {
     path: 'replay-subject',
-    component: ReplaySubjectComponent
+    component: ReplaySubjectComponent,
+    // canActivateChild: [RoleGuard],
   },
   {
     path: 'async-subject',
-    component: AsyncSubjectComponent
+    component: AsyncSubjectComponent,
+    // canDeactivate: [NotCompleteGuard],
+    // canLoad: [AbilityGuard],
+    // resolve: {data: ResolveGuard },
   },
 ];
 

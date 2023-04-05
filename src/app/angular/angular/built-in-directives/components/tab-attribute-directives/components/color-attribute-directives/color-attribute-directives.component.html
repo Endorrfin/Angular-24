@@ -1,0 +1,25 @@
+
+<div class="color-container">
+  <div class="color-container__number">
+    <div [ngClass]="{ red: firstNumber % 5 != 0, green: firstNumber % 5 == 0 }">{{ firstNumber }}</div>
+  </div>
+
+  <div class="color-container__number">
+    <div [ngClass]="{ red: secondNumber % 5 != 0, green: secondNumber % 5 == 0 }">{{ secondNumber }}</div>
+  </div>
+
+  <div class="color-container__number">
+    <div [ngClass]="{ red: secondNumber % 5 != 0, green: secondNumber % 5 != 0, blue: thirdNumber % 10 == 0}">{{ thirdNumber }}</div>
+  </div>
+
+  <div class="color-container__number">
+    <div
+      [ngClass]="{
+      red: isClicked && firstNumber % 5 != 0,
+      green: isClicked && firstNumber % 5 == 0
+      }" (click)="onClick()"
+    >
+      {{ firstNumber }}
+    </div>
+  </div>
+</div>

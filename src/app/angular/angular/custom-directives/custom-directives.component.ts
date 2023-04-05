@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SharedModule } from '../../../@shared/shared.module';
+import { AngularModule } from '../../angular.module';
 
 @Component({
   selector: 'kvn-custom-directives',
@@ -9,7 +10,7 @@ import { SharedModule } from '../../../@shared/shared.module';
   standalone: true,
   imports: [
     RouterOutlet,
-    SharedModule
+    SharedModule,
   ]
 })
 export class CustomDirectivesComponent {
