@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { PATHS } from '../../../paths.constants';
 import { HooksComponent } from './hooks.component';
+import { TabIntroductionHooksComponent } from './tab-introduction/tab-introduction-hooks.component';
 import { TabOnchangesComponent } from './tab-onchanges/tab-onchanges.component';
 import { TabOninitComponent } from './tab-oninit/tab-oninit.component';
 import { TabDocheckComponent } from './tab-docheck/tab-docheck.component';
@@ -9,48 +10,47 @@ import { TabAftercontentcheckedComponent } from './tab-aftercontentchecked/tab-a
 import { TabAfterviewinitComponent } from './tab-afterviewinit/tab-afterviewinit.component';
 import { TabAfterviewcheckedComponent } from './tab-afterviewchecked/tab-afterviewchecked.component';
 import { TabOndestroyComponent } from './tab-ondestroy/tab-ondestroy.component';
-import { TabIntroductionComponent } from './tab-introduction/tab-introduction.component';
 
 export const HooksRoutes: Routes = [
-  { path: '', redirectTo: PATHS.introduction, pathMatch: 'full' },
+  { path: '', redirectTo: PATHS.introductionHooks, pathMatch: 'full' },
   {
     path: '',
     component: HooksComponent,
     children: [
       {
-        path: PATHS.introduction,
-        component: TabIntroductionComponent,
+        path: PATHS.introductionHooks,
+        component: TabIntroductionHooksComponent,
       },
       {
-        path: PATHS.onchanges,
+        path: PATHS.onChanges,
         component: TabOnchangesComponent,
       },
       {
-        path: PATHS.oninit,
+        path: PATHS.onInit,
         component: TabOninitComponent,
       },
       {
-        path: PATHS.docheck,
+        path: PATHS.doCheck,
         component: TabDocheckComponent,
       },
       {
-        path: PATHS.aftercontentinit,
+        path: PATHS.afterContentInit,
         component: TabAftercontentinitComponent,
       },
       {
-        path: PATHS.aftercontentchecked,
+        path: PATHS.afterContentChecked,
         component: TabAftercontentcheckedComponent,
       },
       {
-        path: PATHS.afterviewinit,
+        path: PATHS.afterViewInit,
         component: TabAfterviewinitComponent,
       },
       {
-        path: PATHS.afterviewchecked,
+        path: PATHS.afterViewChecked,
         component: TabAfterviewcheckedComponent,
       },
       {
-        path: PATHS.ondestroy,
+        path: PATHS.onDestroy,
         component: TabOndestroyComponent,
       },
     ],

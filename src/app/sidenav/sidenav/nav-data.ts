@@ -13,12 +13,20 @@ export const navbarData: INavbarData[] = [
     expanded: true,
     items: [
       {
-        routeLink: 'angular/component',
+        routeLink: 'angular/introduction',
         label: 'Angular'
       },
       {
         routeLink: 'angular/hooks',
         label: 'Hooks'
+      },
+      {
+        routeLink: 'angular/built-in-directives',
+        label: 'Built-in directives'
+      },
+      {
+        routeLink: 'angular/custom-directives',
+        label: 'Custom directives'
       },
       {
         routeLink: 'angular/decorators',
@@ -34,7 +42,7 @@ export const navbarData: INavbarData[] = [
     routeLink: 'rxjs',
     icon: 'fal fa-chart-bar',
     label: 'RxJS',
-    expanded: false,
+    expanded: true,
     items: [
       {
         routeLink: 'rxjs/rxjs',

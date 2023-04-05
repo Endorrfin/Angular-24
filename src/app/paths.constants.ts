@@ -4,25 +4,39 @@ export enum PATHS {
 
   dashboard = 'dashboard',
 
+
   // = = = = = = = Angular = = = = = = =
 
   // LIFECYCLE HOOKS
-  hooks = 'hooks',
-  introduction = 'introduction',
-  onchanges = 'on-changes',
-  oninit = 'on-init',
-  docheck = 'do-check',
-  aftercontentinit = 'after-content-init',
-  aftercontentchecked = 'after-content-checked',
-  afterviewinit = 'after-view-init',
-  afterviewchecked = 'after-view-checked',
-  ondestroy = 'on-destroy',
+  introductionHooks = 'introduction',
+  onChanges = 'on-changes',
+  onInit = 'on-init',
+  doCheck = 'do-check',
+  afterContentInit = 'after-content-init',
+  afterContentChecked = 'after-content-checked',
+  afterViewInit = 'after-view-init',
+  afterViewChecked = 'after-view-checked',
+  onDestroy = 'on-destroy',
 
   // DECORATORS
-  introductiondecorators = 'intro',
-  input = 'input',
-  output = 'output',
-  viewchild = 'viewchild',
+  introductionDecorators = 'introduction',
+  inputDecorators = 'input',
+  outputDecorators = 'output',
+  viewChildDecorators = 'viewChild',
+  viewChildrenDecorators = 'viewChildren',
+  contentChildDecorators = 'contentChild',
+  contentChildrenDecorators = 'contentChildren',
+  hostBindingDecorators = 'hostBinding',
+  hostListenerDecorators = 'hostListener',
+
+  // DIRECTIVES BUILT-IN
+  introductionBuiltInDirectives = 'introduction',
+  attributeDirectives = 'attributeDirectives',
+  structuralDirectives = 'structuralDirectives',
+
+  // DIRECTIVES CUSTOM
+  introductionCustomDirectives = 'introduction',
+
 
   // FORMS
   forms = 'forms',
@@ -35,10 +49,12 @@ export enum PATHS {
 
   notfound = '404',
 
+
   // = = = = = = = RxJS = = = = = = =
-  introsubjects = 'intro-subjects',
+
+  introductionSubjects = 'introduction',
   subject = 'subjects',
-  behaviorsubject = 'behavior-subject',
+  behaviorSubject = 'behavior-subject',
   replaySubject = 'replay-subject',
   asyncSubject = 'async-subject',
 }

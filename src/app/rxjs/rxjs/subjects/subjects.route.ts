@@ -9,13 +9,13 @@ import { TabReplaySubjectComponent } from './tab-replay-subject/tab-replay-subje
 
 
 export const SubjectsRoute: Routes = [
-  { path: '', redirectTo: PATHS.introduction, pathMatch: 'full' },
+  { path: '', redirectTo: PATHS.introductionSubjects, pathMatch: 'full' },
   {
     path: '',
     component: SubjectsComponent,
     children: [
       {
-        path: PATHS.introsubjects,
+        path: PATHS.introductionSubjects,
         component: TabIntroSubjectsComponent,
       },
       {
@@ -23,7 +23,7 @@ export const SubjectsRoute: Routes = [
         component: TabSubjectComponent,
       },
       {
-        path: PATHS.behaviorsubject,
+        path: PATHS.behaviorSubject,
         component: TabBehaviorSubjectComponent,
       },
       {
