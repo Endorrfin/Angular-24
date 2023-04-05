@@ -36,6 +36,7 @@ export enum PATHS {
 
   // DIRECTIVES CUSTOM
   introductionCustomDirectives = 'introduction',
+  colorCustomDirectives = 'colorDirectives',
 
 
   // FORMS

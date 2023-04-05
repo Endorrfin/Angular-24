@@ -1,0 +1,19 @@
+.tab-attribute-container {
+  display: flex;
+  font-size: 64px;
+  font-weight: bold;
+  box-sizing: border-box;
+  //border: 1px solid darkgoldenrod;
+  padding: 0;
+
+  &__number {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #fff;
+  }
+}

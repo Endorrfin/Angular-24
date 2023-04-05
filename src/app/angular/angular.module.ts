@@ -14,6 +14,8 @@ import { PerformanceComponent } from './angular/form/tab-reactive-forms/base-for
 import { CustomizationComponent } from './angular/form/tab-reactive-forms/base-form/components/customipztion/customization.component';
 import { EnergySavingComponent } from './angular/form/tab-reactive-forms/base-form/components/energy-saving/energy-saving.component';
 import { RainbowComponent } from './angular/decorators/tab-hostbinding/components/rainbow/rainbow.component';
+import { ColorAttributeDirectivesComponent } from './angular/built-in-directives/components/tab-attribute-directives/components/color-attribute-directives/color-attribute-directives.component';
+import { HighlightCustomDirectiveComponent } from './angular/custom-directives/components/tab-color-custom-directives/components/highlight-custom-directive/highlight-custom-directive.component';
 
 
 @NgModule({
@@ -29,12 +31,16 @@ import { RainbowComponent } from './angular/decorators/tab-hostbinding/component
     CustomizationComponent,
     EnergySavingComponent,
     RainbowComponent,
+    ColorAttributeDirectivesComponent,
+    HighlightCustomDirectiveComponent,
   ],
   exports: [
     ParentComponent,
     ParentInputDecoratorComponent,
     BaseFormComponent,
-    RainbowComponent
+    RainbowComponent,
+    ColorAttributeDirectivesComponent,
+    HighlightCustomDirectiveComponent
   ],
   imports: [
     CommonModule,
