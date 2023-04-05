@@ -5,8 +5,8 @@ import { SharedComponentsModule } from '../../../../@shared/components/component
 
 @Component({
   selector: 'tab-introduction',
-  templateUrl: './tab-introduction.component.html',
-  styleUrls: ['./tab-introduction.component.scss'],
+  templateUrl: './tab-introduction-hooks.component.html',
+  styleUrls: ['./tab-introduction-hooks.component.scss'],
   standalone: true,
   imports: [
     AngularModule,
@@ -14,7 +14,7 @@ import { SharedComponentsModule } from '../../../../@shared/components/component
     SharedComponentsModule,
   ]
 })
-export class TabIntroductionComponent {
+export class TabIntroductionHooksComponent {
   title: string = 'kvn-introduction';
   show: boolean = true;
 }

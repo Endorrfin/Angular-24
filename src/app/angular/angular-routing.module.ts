@@ -4,19 +4,41 @@ import { AngularComponent } from './angular/angular.component';
 import { HooksComponent } from './angular/hooks/hooks.component';
 import { FormComponent } from './angular/form/form.component';
 import { DecoratorsComponent } from './angular/decorators/decorators.component';
+import { BuiltInDirectivesComponent } from './angular/built-in-directives/built-in-directives.component';
+import { CustomDirectivesComponent } from './angular/custom-directives/custom-directives.component';
 
 const routes: Routes = [
   {
-    path: 'component',
+    path: 'introduction',
     component: AngularComponent,
   },
   {
-    path: 'hooks',
+    path: 'hooks-cycle',
     component: HooksComponent,
     children: [
       {
         path: '',
         loadChildren: () => import('./angular/hooks/hooks.route').then((m) => m.HooksRoutes)
+      },
+    ],
+  },
+  {
+    path: 'built-in-directives',
+    component: BuiltInDirectivesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./angular/built-in-directives/built-in-directives.route').then((m) => m.BuiltInDirectivesRoutes)
+      },
+    ],
+  },
+  {
+    path: 'custom-directives',
+    component: CustomDirectivesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./angular/custom-directives/custom-directives.route').then((m) => m.CustomDirectivesRoutes)
       },
     ],
   },

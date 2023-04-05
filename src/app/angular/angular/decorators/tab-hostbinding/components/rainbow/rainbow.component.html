@@ -1,0 +1,44 @@
+
+<div class="rainbow-container">
+
+  <kvn-page-title
+    [title]="'Example of work HostBinding and HostListener'">
+  </kvn-page-title>
+
+  <input type="text" kvnRainbow />
+
+
+  <mat-divider class="separate"></mat-divider>
+
+
+  <form class="example-form" [formGroup]="profileForm">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>First name</mat-label>
+      <input
+        type="text"
+        kvnRainbow
+        matInput formControlName="firstName"
+        placeholder="Ex. Silvia">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Last name</mat-label>
+      <input
+        type="text"
+        kvnRainbow
+        matInput formControlName="lastName"
+        placeholder="Ex. Prinsate">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput formControlName="email"
+        placeholder="Ex. name@example.com">
+      <mat-hint>Errors appear instantly!</mat-hint>
+    </mat-form-field>
+  </form>
+</div>
+

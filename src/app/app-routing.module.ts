@@ -14,12 +14,6 @@ const routes: Routes = [
     path: 'rxjs',
     loadChildren: () => import('./rxjs/rxjs.module').then(m => m.RxjsModule)
   },
-  // {path: 'products', component: ProductsComponent},
-  // {path: 'statistics', component: StatisticsComponent},
-  // {path: 'coupens', component: CoupensComponent},
-  // {path: 'pages', component: PagesComponent},
-  // {path: 'media', component: MediaComponent},
-  // {path: 'educations', component: EducationsComponent},
   {path: 'settings', component: SettingsComponent},
 ];
 
