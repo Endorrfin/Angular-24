@@ -1,0 +1,48 @@
+<h2>Current version {{ title }} </h2>
+<p>How working Higher order observables 🎯</p>
+<div>
+  <form [formGroup]="form">
+    <label>
+      <input name="operator" type="radio" value="switchMap" formControlName="operator">
+      <span>switchMap</span>
+    </label>
+    <label>
+      <input name="operator" type="radio" value="concatMap" formControlName="operator">
+      <span>concatMap</span>
+    </label>
+    <label>
+      <input  name="operator" type="radio" value="mergeMap" formControlName="operator">
+      <span>mergeMap</span>
+    </label>
+    <label>
+      <input  name="operator" type="radio" value="exhaustMap" formControlName="operator">
+      <span>exhaustMap</span>
+    </label>
+
+  </form>
+  <br/>
+
+  <button (click)="fireEvent()" type="button" [disabled]="form.invalid">Fire TWO Events</button>
+</div>
+
+
+<mat-divider class="split"></mat-divider>
+
+
+
+<h2>flatMap/mergeMap</h2>
+<p>Creates an Observable immediately for any source item, all previous Observables are kept alive. Note flatMap is an alias for mergeMap and flatMap will be removed in RxJS 8.</p>
+
+<h2>concatMap</h2>
+<p>waits for the previous Observable to complete before creating the next one</p>
+
+<h2>exhaustMap</h2>
+<p>source items are ignored while the previous Observable is not completed</p>
+
+<h2>switchMap</h2>
+<p>for any source item, completes the previous Observable and immediately creates the next one</p>
+
+
+
+
+
