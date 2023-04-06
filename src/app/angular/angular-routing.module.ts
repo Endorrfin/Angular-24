@@ -13,7 +13,7 @@ const routes: Routes = [
     component: AngularComponent,
   },
   {
-    path: 'hooks-cycle',
+    path: 'lifecycle-hooks',
     component: HooksComponent,
     children: [
       {

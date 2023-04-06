@@ -17,7 +17,7 @@
            (click)="handleClick(data)"
            class="sidenav-nav-link"
            [ngClass]="getActiveClass(data)">
-          <i class="sidenav-link-icon" [class]="data.icon"></i>
+          <i class="sidenav-link-icon" (click)="toggleCollapse()"  [class]="data.icon"></i>
           <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
           {{data.label}}
         </span>

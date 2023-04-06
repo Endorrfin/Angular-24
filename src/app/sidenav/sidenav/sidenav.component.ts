@@ -94,6 +94,7 @@ export class SidenavComponent implements OnInit {
   }
 
   shrinkItems(item: INavbarData): void {
+    // debugger;
     if (!this.multiple) {
       for(let modelItem of this.navData) {
         if (item !== modelItem && modelItem.expanded) {

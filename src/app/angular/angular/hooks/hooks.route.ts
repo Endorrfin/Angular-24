@@ -12,13 +12,13 @@ import { TabAfterviewcheckedComponent } from './tab-afterviewchecked/tab-aftervi
 import { TabOndestroyComponent } from './tab-ondestroy/tab-ondestroy.component';
 
 export const HooksRoutes: Routes = [
-  { path: '', redirectTo: PATHS.introductionHooks, pathMatch: 'full' },
+  { path: '', redirectTo: PATHS.introductionLifecycleHooks, pathMatch: 'full' },
   {
     path: '',
     component: HooksComponent,
     children: [
       {
-        path: PATHS.introductionHooks,
+        path: PATHS.introductionLifecycleHooks,
         component: TabIntroductionHooksComponent,
       },
       {
