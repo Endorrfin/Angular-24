@@ -13,11 +13,22 @@ import { NotCompleteGuard } from '../@shared/guards/not-complete.guard';
 import { AbilityGuard } from '../@shared/guards/ability.guard';
 import { ResolveGuard } from '../@shared/guards/resolve.guard';
 import { HigherOrderObservablesComponent } from './rxjs/higher-order-observables/higher-order-observables.component';
+import { ObservablesComponent } from './rxjs/observables/observables.component';
 
 const routes: Routes = [
   {
     path: 'rxjs',
     component: RxjsComponent
+  },
+  {
+    path: 'observables',
+    component: ObservablesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./rxjs/observables/observables.route').then((m) => m.ObservablesRoute)
+      },
+    ],
   },
   {
     path: 'higher-order-observables',

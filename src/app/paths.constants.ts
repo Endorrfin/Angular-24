@@ -8,7 +8,7 @@ export enum PATHS {
   // = = = = = = = Angular = = = = = = =
 
   // LIFECYCLE HOOKS
-  introductionHooks = 'introduction',
+  introductionLifecycleHooks = 'introduction',
   onChanges = 'on-changes',
   onInit = 'on-init',
   doCheck = 'do-check',
@@ -52,6 +52,11 @@ export enum PATHS {
 
 
   // = = = = = = = RxJS = = = = = = =
+
+  // ASYNCHRONY
+  introductionAsynchrony = 'introduction',
+  promises = 'promises',
+  observables = 'observables',
 
   // HIGHER-ORDER OBSERVABLES
   introductionHigherOrderObservables = 'introduction',

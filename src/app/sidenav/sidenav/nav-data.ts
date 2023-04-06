@@ -8,102 +8,91 @@ export const navbarData: INavbarData[] = [
   },
   {
     routeLink: 'angular',
-    icon: 'fal fa-box-open',
+    // icon: 'fal fa-box-open',
+    icon: 'fas fa-box-open',
     label: 'Angular',
     expanded: true,
     items: [
       {
         routeLink: 'angular/introduction',
+        icon: '',
         label: 'Angular'
       },
       {
-        routeLink: 'angular/hooks',
+        routeLink: 'angular/lifecycle-hooks',
         label: 'Hooks'
       },
       {
         routeLink: 'angular/built-in-directives',
+        icon: 'fa fa-asl-interpreting',
         label: 'Built-in directives'
       },
       {
         routeLink: 'angular/custom-directives',
+        icon: 'fa fa-american-sign-language-interpreting',
         label: 'Custom directives'
       },
       {
         routeLink: 'angular/decorators',
+        icon: '',
         label: 'Decorators'
       },
       {
         routeLink: 'angular/forms',
+        icon: 'view_list',
         label: 'Forms'
       },
     ]
   },
   {
     routeLink: 'rxjs',
-    icon: 'fal fa-chart-bar',
+    // icon: 'fal fa-chart-bar',
+    icon: 'fa fa-american-sign-language-interpreting',
     label: 'RxJS',
     expanded: true,
     items: [
       {
         routeLink: 'rxjs/rxjs',
+        icon: '',
         label: 'rxjs'
       },
       {
+        routeLink: 'rxjs/observables',
+        icon: '',
+        label: 'Observables'
+      },
+      {
         routeLink: 'rxjs/higher-order-observables',
+        icon: 'fa fa-superpowers',
         label: 'Higher-order Observables'
       },
       {
         routeLink: 'rxjs/subjects',
+        icon: '',
         label: 'Subjects'
       },
       {
         routeLink: 'rxjs/subject',
+        icon: 'fal fa-home',
         label: 'Subject'
       },
       {
         routeLink: 'rxjs/behavior-subject',
+        icon: 'fal fa-home',
         label: 'BehaviorSubject'
       },
       {
         routeLink: 'rxjs/replay-subject',
+        icon: 'fal fa-home',
         label: 'ReplaySubject'
       },
       {
         routeLink: 'rxjs/async-subject',
+        icon: 'fal fa-home',
         label: 'AsyncSubject'
       },
     ]
   },
-  // {
-  //   routeLink: 'products',
-  //   icon: 'fal fa-box-open',
-  //   label: 'Products'
-  // },
-  // {
-  //   routeLink: 'statistics',
-  //   icon: 'fal fa-chart-bar',
-  //   label: 'Statistics'
-  // },
-  // {
-  //   routeLink: 'coupens',
-  //   icon: 'fal fa-tags',
-  //   label: 'Coupens'
-  // },
-  // {
-  //   routeLink: 'pages',
-  //   icon: 'fal fa-file',
-  //   label: 'Pages'
-  // },
-  // {
-  //   routeLink: 'media',
-  //   icon: 'fal fa-camera',
-  //   label: 'Media'
-  // },
-  // {
-  //   routeLink: 'educations',
-  //   icon: 'fa-sharp fa-solid fa-user',
-  //   label: 'Educations'
-  // },
   {
     routeLink: 'settings',
     icon: 'fal fa-cog',
@@ -112,10 +101,12 @@ export const navbarData: INavbarData[] = [
     items: [
       {
         routeLink: 'settings/profile',
+        icon: '',
         label: 'Profile'
       },
       {
         routeLink: 'settings/customize',
+        icon: '',
         label: 'Customize'
       },
     ]
@@ -127,22 +118,27 @@ export const navbarData: INavbarData[] = [
     items: [
       {
         routeLink: 'template/level1.1',
+        icon: '',
         label: 'Template Level 1.1',
         items: [
           {
             routeLink: 'template/level2.1',
+            icon: '',
             label: 'Template Level 2.1'
           },
           {
             routeLink: 'template/level2.2',
+            icon: '',
             label: 'Create Level 2.2',
             items: [
               {
                 routeLink: 'template/level3.1',
+                icon: '',
                 label: 'Template Level 3.1'
               },
               {
                 routeLink: 'template/level3.2',
+                icon: '',
                 label: 'Create Level 3.2'
               },
             ]
@@ -151,6 +147,7 @@ export const navbarData: INavbarData[] = [
       },
       {
         routeLink: 'template/level1.2',
+        icon: '',
         label: 'Create Level 1.2'
       },
     ]
