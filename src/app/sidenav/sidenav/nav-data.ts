@@ -49,6 +49,10 @@ export const navbarData: INavbarData[] = [
         label: 'rxjs'
       },
       {
+        routeLink: 'rxjs/higher-order-observables',
+        label: 'Higher-order Observables'
+      },
+      {
         routeLink: 'rxjs/subjects',
         label: 'Subjects'
       },

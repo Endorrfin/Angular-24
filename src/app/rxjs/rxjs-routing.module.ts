@@ -12,11 +12,22 @@ import { RoleGuard } from '../@shared/guards/role.guard';
 import { NotCompleteGuard } from '../@shared/guards/not-complete.guard';
 import { AbilityGuard } from '../@shared/guards/ability.guard';
 import { ResolveGuard } from '../@shared/guards/resolve.guard';
+import { HigherOrderObservablesComponent } from './rxjs/higher-order-observables/higher-order-observables.component';
 
 const routes: Routes = [
   {
     path: 'rxjs',
     component: RxjsComponent
+  },
+  {
+    path: 'higher-order-observables',
+    component: HigherOrderObservablesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./rxjs/higher-order-observables/higher-order-observables.route').then((m) => m.HigherOrderObservablesRoute)
+      },
+    ],
   },
   {
     path: 'subjects',

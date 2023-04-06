@@ -53,9 +53,20 @@ export enum PATHS {
 
   // = = = = = = = RxJS = = = = = = =
 
+  // HIGHER-ORDER OBSERVABLES
+  introductionHigherOrderObservables = 'introduction',
+  map = 'map',
+  concatMap = 'concatMap',
+  mergeMap = 'mergeMap',
+  flatMap = 'flatMap',
+  exhaustMap = 'exhaustMap',
+  switchMap = 'switchMap',
+
+  // SUBJECTS
   introductionSubjects = 'introduction',
   subject = 'subjects',
   behaviorSubject = 'behavior-subject',
   replaySubject = 'replay-subject',
   asyncSubject = 'async-subject',
+
 }
