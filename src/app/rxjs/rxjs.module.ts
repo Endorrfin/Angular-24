@@ -14,7 +14,6 @@ import { ParentBehaviorSubjectComponent } from './rxjs/subjects/components/tab-b
 import { SiblingTwoBehaviorSubjectComponent } from './rxjs/subjects/components/tab-behavior-subject/components/sibling-two-behavior-subject/sibling-two-behavior-subject.component';
 import { SharedModule } from '../@shared/shared.module';
 
-
 @NgModule({
   declarations: [
     RxjsComponent,
@@ -27,6 +26,7 @@ import { SharedModule } from '../@shared/shared.module';
     ParentBehaviorSubjectComponent,
     SiblingOneBehaviorSubjectComponent,
     SiblingTwoBehaviorSubjectComponent,
+
   ],
   imports: [
     CommonModule,

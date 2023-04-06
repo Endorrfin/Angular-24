@@ -1,0 +1,54 @@
+<div class="container">
+  <h1 class="title">My Dashboard</h1>
+  <div class="widgets">
+
+    <div class="widget">
+      <div class="title">Schools</div>
+      <div class="value">{{ schoolsCnt }}</div>
+    </div>
+
+    <div class="widget">
+      <div class="title">Hospitals</div>
+      <div class="value">{{ hospitalsCnt }}</div>
+    </div>
+
+    <div class="widget">
+      <div class="title">Banks</div>
+      <div class="value">{{ banksCnt }}</div>
+    </div>
+  </div>
+
+  <div class="widgets">
+
+    <div class="spinner">
+      <div class="sk-circle" *ngIf="isWidgetOneSpinner"></div>
+    </div>
+
+    <div class="spinner">
+      <div class="sk-circle" *ngIf="isWidgetTwoSpinner"></div>
+    </div>
+
+    <div class="spinner">
+      <div class="sk-circle" *ngIf="isWidgetThreeSpinner"></div>
+    </div>
+  </div>
+
+
+  <div class="widgets">
+
+    <div class="widget">
+      <div class="title">Schools</div>
+      <div class="value">{{ schoolsCntOne }}</div>
+    </div>
+
+    <div class="widget">
+      <div class="title">Hospitals</div>
+      <div class="value">{{ hospitalsCntTwo }}</div>
+    </div>
+
+    <div class="widget">
+      <div class="title">Banks</div>
+      <div class="value">{{ banksCntThree }}</div>
+    </div>
+  </div>
+</div>

@@ -58,6 +58,47 @@ export enum PATHS {
   promises = 'promises',
   observables = 'observables',
 
+  // CATEGORY OF OPERATORS
+  creationOperators = 'creation-operators',
+  joinCreationOperators = 'join-creation-operators',
+  transformationOperators = 'transformation-operators',
+  filteringOperators = 'filtering-operators',
+
+  // Creation Operators
+  defer = 'defer',
+  empty = 'empty',
+  from = 'from',
+  fromEvent = 'fromEvent',
+  of = 'of',
+
+  // Join Creation Operators
+  introductionJoinCreationOperators = 'introduction',
+  forkJoin = 'forkJoin',
+  combineLatest = 'combineLatest',
+  concat = 'concat',
+  merge = 'merge',
+  race = 'race',
+  zip = 'zip',
+
+  // Transformation Operators
+  buffer = 'buffer',
+  groupBy = 'groupBy',
+  pluck = 'pluck',
+
+  // Filtering Operators
+  filter = 'filter',
+  debounce = 'debounce',
+  debounceTime = 'debounceTime',
+  skip = 'skip',
+  take = 'take',
+  takeUntil = 'takeUntil',
+  takeWhile = 'takeWhile',
+  throttle = 'throttle',
+  throttleTime = 'throttleTime',
+
+
+
+
   // HIGHER-ORDER OBSERVABLES
   introductionHigherOrderObservables = 'introduction',
   map = 'map',

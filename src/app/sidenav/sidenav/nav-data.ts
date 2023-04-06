@@ -62,6 +62,33 @@ export const navbarData: INavbarData[] = [
         label: 'Observables'
       },
       {
+        routeLink: 'rxjs/operators',
+        icon: '',
+        label: 'Operators',
+        items: [
+          {
+            routeLink: 'rxjs/operators/creation-operators',
+            icon: '',
+            label: 'Creation Operators'
+          },
+          {
+            routeLink: 'rxjs/operators/join-creation-operators',
+            icon: '',
+            label: 'Join Creation Operators'
+          },
+          {
+            routeLink: 'rxjs/operators/transformation-operators',
+            icon: '',
+            label: 'Transformation Operators'
+          },
+          {
+            routeLink: 'rxjs/operators/filtering-operators',
+            icon: '',
+            label: 'Filtering Operators'
+          },
+        ]
+      },
+      {
         routeLink: 'rxjs/higher-order-observables',
         icon: 'fa fa-superpowers',
         label: 'Higher-order Observables'

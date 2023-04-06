@@ -14,6 +14,7 @@ import { AbilityGuard } from '../@shared/guards/ability.guard';
 import { ResolveGuard } from '../@shared/guards/resolve.guard';
 import { HigherOrderObservablesComponent } from './rxjs/higher-order-observables/higher-order-observables.component';
 import { ObservablesComponent } from './rxjs/observables/observables.component';
+import { OperatorsComponent } from './rxjs/operators/operators.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./rxjs/observables/observables.route').then((m) => m.ObservablesRoute)
+      },
+    ],
+  },
+  {
+    path: 'operators',
+    component: OperatorsComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./rxjs/operators/operators.route').then((m) => m.OperatorsRoute)
       },
     ],
   },
