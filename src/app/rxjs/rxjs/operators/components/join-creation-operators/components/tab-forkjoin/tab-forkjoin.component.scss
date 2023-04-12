@@ -10,7 +10,7 @@
 
   .widgets {
     display: flex;
-    border: 2px solid #e8e0ff;
+    border: 2px solid #eee;
     padding: 10px;
 
     .widget {
@@ -19,7 +19,6 @@
       width: 200px;
       height: 80px;
       background-color: #5e14ff;
-      margin-right: 10px;
       align-items: center;
       justify-content: center;
       border-radius: 3%;
@@ -36,6 +35,10 @@
         margin-top: 20px;
         color: #fff;
       }
+    }
+
+    .widget:nth-last-child(n+2) {
+      margin-right: 15px;
     }
   }
 }

@@ -38,11 +38,14 @@ export enum PATHS {
   introductionCustomDirectives = 'introduction',
   colorCustomDirectives = 'colorDirectives',
 
-
   // FORMS
   forms = 'forms',
   reactive = 'reactive-forms',
   template = 'template-driven-forms',
+
+  // TABLES
+  matTable = 'mat-table',
+  trackBy = 'track-by',
 
   // NgRX
   ngrx = 'ngrx',

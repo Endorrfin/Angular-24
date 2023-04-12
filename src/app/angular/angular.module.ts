@@ -16,6 +16,7 @@ import { EnergySavingComponent } from './angular/form/tab-reactive-forms/base-fo
 import { RainbowComponent } from './angular/decorators/tab-hostbinding/components/rainbow/rainbow.component';
 import { ColorAttributeDirectivesComponent } from './angular/built-in-directives/components/tab-attribute-directives/components/color-attribute-directives/color-attribute-directives.component';
 import { HighlightCustomDirectiveComponent } from './angular/custom-directives/components/tab-color-custom-directives/components/highlight-custom-directive/highlight-custom-directive.component';
+import { TrackByComponent } from './angular/tables/components/tab-track-by/components/track-by/track-by.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { HighlightCustomDirectiveComponent } from './angular/custom-directives/c
     RainbowComponent,
     ColorAttributeDirectivesComponent,
     HighlightCustomDirectiveComponent,
+    TrackByComponent,
   ],
   exports: [
     ParentComponent,
@@ -40,7 +42,8 @@ import { HighlightCustomDirectiveComponent } from './angular/custom-directives/c
     BaseFormComponent,
     RainbowComponent,
     ColorAttributeDirectivesComponent,
-    HighlightCustomDirectiveComponent
+    HighlightCustomDirectiveComponent,
+    TrackByComponent
   ],
   imports: [
     CommonModule,

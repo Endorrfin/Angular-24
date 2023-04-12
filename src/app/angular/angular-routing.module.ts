@@ -6,6 +6,7 @@ import { FormComponent } from './angular/form/form.component';
 import { DecoratorsComponent } from './angular/decorators/decorators.component';
 import { BuiltInDirectivesComponent } from './angular/built-in-directives/built-in-directives.component';
 import { CustomDirectivesComponent } from './angular/custom-directives/custom-directives.component';
+import { TablesComponent } from './angular/tables/tables.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./angular/form/forms.route').then((m) => m.FormsRoutes)
+      },
+    ],
+  },
+  {
+    path: 'tables',
+    component: TablesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./angular/tables/tables.routes').then((m) => m.TablesRoutes)
       },
     ],
   },
