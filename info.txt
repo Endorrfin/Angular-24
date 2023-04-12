@@ -20,6 +20,7 @@ To generate components :
 
 
 
+💥---------------------------
 Sidenav with Multi Level Menu
 https://www.youtube.com/watch?v=rAWlJMe_7rg
 Commands used
@@ -32,3 +33,8 @@ To generate components :
   To generate modules:
   ng g m coupens --routing --flat true
   ng g m products --routing --flat true
+
+
+💥---------------------------
+Advanced Angular Tutorial | Hero to Superhero
+https://www.youtube.com/playlist?list=PLoC8Q0moRTSgYzCoo5fklvPT40KQVUorx

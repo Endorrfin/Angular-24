@@ -8,10 +8,9 @@ export const navbarData: INavbarData[] = [
   },
   {
     routeLink: 'angular',
-    // icon: 'fal fa-box-open',
-    icon: 'fas fa-box-open',
+    icon: 'fal fa-box-open',
     label: 'Angular',
-    expanded: true,
+    expanded: false,
     items: [
       {
         routeLink: 'angular/introduction',
@@ -42,6 +41,11 @@ export const navbarData: INavbarData[] = [
         icon: 'view_list',
         label: 'Forms'
       },
+      {
+        routeLink: 'angular/tables',
+        icon: '',
+        label: 'Tables'
+      },
     ]
   },
   {
@@ -49,7 +53,7 @@ export const navbarData: INavbarData[] = [
     // icon: 'fal fa-chart-bar',
     icon: 'fa fa-american-sign-language-interpreting',
     label: 'RxJS',
-    expanded: true,
+    expanded: false,
     items: [
       {
         routeLink: 'rxjs/rxjs',
