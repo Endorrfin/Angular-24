@@ -1,0 +1,55 @@
+
+<div class="table-container">
+  <div class="btn-container">
+    <kvn-button
+      label="Refresh"
+      color="red"
+      class="btn btn-danger"
+      (click)="refresh()">
+    </kvn-button>
+  </div>
+
+  <div class="rows">
+    <div class="row row-header">
+      <div class="cell cell-header">Id</div>
+      <div class="cell cell-header">Name</div>
+      <div class="cell cell-header">Age</div>
+    </div>
+
+    <div *ngFor="let user of users"
+         class="row row-body">
+      <div class="cell cell-body">{{ user.id }}</div>
+      <div class="cell cell-body">{{ user.name }}</div>
+      <div class="cell cell-body">{{ user.age }}</div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="table-container">
+  <div class="btn-container">
+    <kvn-button
+      label="Refresh"
+      color="green"
+      class="btn btn-danger"
+      (click)="refresh()">
+    </kvn-button>
+  </div>
+
+  <div class="rows">
+    <div class="row row-header">
+      <div class="cell cell-header">Id</div>
+      <div class="cell cell-header">Name</div>
+      <div class="cell cell-header">Age</div>
+    </div>
+
+    <div *ngFor="let user of users trackBy: trackByUser"
+         class="row row-body">
+      <div class="cell cell-body">{{ user.id }}</div>
+      <div class="cell cell-body">{{ user.name }}</div>
+      <div class="cell cell-body">{{ user.age }}</div>
+    </div>
+
+  </div>
+</div>
