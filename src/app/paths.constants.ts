@@ -33,6 +33,7 @@ export enum PATHS {
   introductionBuiltInDirectives = 'introduction',
   attributeDirectives = 'attributeDirectives',
   structuralDirectives = 'structuralDirectives',
+  ngTemplateOutlet = 'ng-template-outlet',
 
   // DIRECTIVES CUSTOM
   introductionCustomDirectives = 'introduction',

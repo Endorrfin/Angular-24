@@ -22,6 +22,9 @@ import { RxjsModule } from './rxjs/rxjs.module';
     AngularModule,
     RxjsModule
   ],
+
+  exports: [],
+
   providers: [],
   bootstrap: [AppComponent]
 })

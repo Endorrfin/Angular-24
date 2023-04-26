@@ -4,7 +4,7 @@ import { SharedModule } from '../../../../../@shared/shared.module';
 import { AngularModule } from '../../../../angular.module';
 
 @Component({
-  selector: 'app-tab-color-custom-directives',
+  selector: 'kvn-tab-color-custom-directives',
   templateUrl: './tab-color-custom-directives.component.html',
   styleUrls: ['./tab-color-custom-directives.component.scss'],
   standalone: true,
