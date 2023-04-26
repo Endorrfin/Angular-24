@@ -18,7 +18,6 @@ import { ColorAttributeDirectivesComponent } from './angular/built-in-directives
 import { HighlightCustomDirectiveComponent } from './angular/custom-directives/components/tab-color-custom-directives/components/highlight-custom-directive/highlight-custom-directive.component';
 import { TrackByComponent } from './angular/tables/components/tab-track-by/components/track-by/track-by.component';
 
-
 @NgModule({
   declarations: [
     AngularComponent,
