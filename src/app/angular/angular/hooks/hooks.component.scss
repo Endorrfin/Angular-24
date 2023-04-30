@@ -1,0 +1,32 @@
+
+
+.hook-container {
+  padding: 10px 15px;
+
+  .hook-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 0 7px;
+    color: crimson;
+  }
+
+  .hook-title::before {
+    content: '🌀';
+    padding-right: 10px;
+  }
+
+  dd {
+    margin: 7px;
+    font-style: italic;
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  dd::before {
+    content: '➾';
+  }
+  dd::after {
+    content: ' ⇠';
+  }
+}
+
+
