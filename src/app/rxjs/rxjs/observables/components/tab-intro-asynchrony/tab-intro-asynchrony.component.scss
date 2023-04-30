@@ -1,0 +1,59 @@
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn-as {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .create {
+    background-color: blue;
+  }
+
+  .execute {
+    background-color: green;
+  }
+
+  .cancel {
+    background-color: red;
+  }
+
+
+  .btn-compare {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    width: 180px;
+    height: 80px;
+    border-radius: 7%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    margin-right: 50px;
+  }
+
+  .observable {
+    display: flex;
+    background-color: orangered;
+  }
+
+  .subject {
+    display: flex;
+    background-color: saddlebrown;
+  }
+}
