@@ -1,4 +1,6 @@
 
+<!--Observable vs Promise | Angular Interview Concepts - https://www.youtube.com/watch?v=P-kl0VoHj_k&list=PLoC8Q0moRTSjG53-besrUtWXeDpmkZRjL&index=5-->
+
 <h2>Promise</h2>
 <p>A Promise handles a single event when an async operation completes or fails.</p>
 <p>Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.</p>
@@ -12,3 +14,31 @@
 <p>Observable provides operators like map, forEach, reduce, ... similar to an array</p>
 <p>There are also powerful operators like retry(), or replay(), ... that are often quite handy. A list of operators shipped with rxjs</p>
 <p>Lazy execution allows to build up a chain of operators before the observable is executed by subscribing, to do a more declarative kind of programming.</p>
+
+<hr>
+
+<h2>Observable || Promise</h2>
+
+<div class="container">
+  <button (click)="create()" class="btn-as create">Create</button>
+  <button (click)="execute()" class="btn-as execute">Execute</button>
+  <button (click)="cancel()" class="btn-as cancel">Cancel</button>
+</div>
+
+<hr>
+<h2>Get Observables Data &  Get Subject Data</h2>
+
+<div class="container">
+  <button (click)="getObservableData()" class="btn-compare observable">Get Observable data</button>
+  <button (click)="getSubjectData()" class="btn-compare subject">Get Observable data</button>
+</div>
+
+<div class="text-container">
+  <div class="section left">
+    <div>Observable 1 & 2 equals: {{observableData2}} | {{observableData3}}</div>
+  </div>
+
+  <div class="section right">
+    <div>Subject 1 & 2 equals: {{subjectData2}} | {{subjectData3}}</div>
+  </div>
+</div>
