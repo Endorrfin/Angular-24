@@ -17,6 +17,14 @@ import { RainbowComponent } from './angular/decorators/tab-hostbinding/component
 import { ColorAttributeDirectivesComponent } from './angular/built-in-directives/components/tab-attribute-directives/components/color-attribute-directives/color-attribute-directives.component';
 import { HighlightCustomDirectiveComponent } from './angular/custom-directives/components/tab-color-custom-directives/components/highlight-custom-directive/highlight-custom-directive.component';
 import { TrackByComponent } from './angular/tables/components/tab-track-by/components/track-by/track-by.component';
+import { BirdsComponent } from './angular/decorators/tab-contentchildren/components/birds/birds.component';
+import { BatsComponent } from './angular/decorators/tab-contentchildren/components/bats/bats.component';
+import { CrowsComponent } from './angular/decorators/tab-contentchildren/components/crows/crows.component';
+import { DucksComponent } from './angular/decorators/tab-contentchildren/components/ducks/ducks.component';
+import { ParrotsComponent } from './angular/decorators/tab-contentchildren/components/parrots/parrots.component';
+import { OwlsComponent } from './angular/decorators/tab-contentchildren/components/owls/owls.component';
+import { BuffaloComponent } from './angular/decorators/tab-contentchildren/components/buffallo/buffalo.component';
+import { FrogComponent } from './angular/decorators/tab-contentchildren/components/frog/frog.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +42,14 @@ import { TrackByComponent } from './angular/tables/components/tab-track-by/compo
     ColorAttributeDirectivesComponent,
     HighlightCustomDirectiveComponent,
     TrackByComponent,
+    BirdsComponent,
+    BatsComponent,
+    CrowsComponent,
+    DucksComponent,
+    ParrotsComponent,
+    OwlsComponent,
+    BuffaloComponent,
+    FrogComponent,
   ],
   exports: [
     ParentComponent,
@@ -42,7 +58,15 @@ import { TrackByComponent } from './angular/tables/components/tab-track-by/compo
     RainbowComponent,
     ColorAttributeDirectivesComponent,
     HighlightCustomDirectiveComponent,
-    TrackByComponent
+    TrackByComponent,
+    BirdsComponent,
+    BatsComponent,
+    BuffaloComponent,
+    CrowsComponent,
+    DucksComponent,
+    FrogComponent,
+    OwlsComponent,
+    ParrotsComponent
   ],
   imports: [
     CommonModule,
