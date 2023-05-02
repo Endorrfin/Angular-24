@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SharedModule } from '../../../../@shared/shared.module';
+import { AngularModule } from '../../../angular.module';
 
 @Component({
   selector: 'kvn-tab-contentchildren',
@@ -9,7 +10,8 @@ import { SharedModule } from '../../../../@shared/shared.module';
   standalone: true,
   imports: [
     RouterOutlet,
-    SharedModule
+    SharedModule,
+    AngularModule
   ]
 })
 export class TabContentchildrenComponent {
